@@ -1,0 +1,11 @@
+$font-stack: Helvetica, sans-serif;
+$main-color: #212529;
+$secondary-color: #6c757d;
+$btn-color: #007bff;
+$btn-color-hover: #0069d9;
+$alt-bg-color: #f8f9fa;
+
+body {
+    font: 100% $font-stack;
+    color: $main-color;
+}
