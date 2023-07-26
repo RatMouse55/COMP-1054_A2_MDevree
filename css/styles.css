@@ -1,230 +1,225 @@
-/* general */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-    font: 100% Helvetica, sans-serif;
-    color: #212529;
+  font: 100% Helvetica, sans-serif;
+  color: #212529;
 }
 
 p {
-    line-height: 1.5rem;
-    margin-bottom: 16px;
+  line-height: 1.5rem;
+  margin-bottom: 16px;
 }
 
 a {
-    line-height: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .content {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* for the nav thing */
 #collapse {
-    display: none;
+  display: none;
 }
 
-/* header */
 header {
-    background-color: #343a40;
+  background-color: #343a40;
 }
 header .content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 header .content div {
-    display: flex;
-    flex-direction: column;
-    padding: 24px 15px;
-    max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 15px;
+  max-width: fit-content;
 }
 header .content > div {
-    min-width: 635px;
+  min-width: 635px;
 }
 header .content div + div {
-    margin: 0 0 0 95px;
+  margin: 0 0 0 95px;
 }
 header p {
-    color: #6c757d;
+  color: #6c757d;
 }
-header h4,
-header a {
-    color: #fff;
+header h4, header a {
+  color: #fff;
 }
 header h4 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
 }
 header .main-nav {
-    height: 56px;
+  height: 56px;
 }
 header .main-nav .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header .main-nav .content a {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: 1.25rem;
 }
 header .main-nav .content a svg {
-    size: 100%;
-    margin-right: 8px;
+  size: 100%;
+  margin-right: 8px;
 }
 header .main-nav .content button {
-    background-color: #343a40;
-    border: 1px solid #6c757d;
-    color: #fff;
-    border-radius: 5px;
-    width: 56px;
-    height: 40px;
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  background-color: #343a40;
+  border: 1px solid #6c757d;
+  color: #fff;
+  border-radius: 5px;
+  width: 56px;
+  height: 40px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-/* main content */
 main section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 96px 32px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 96px 32px;
 }
 main section .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 main section .content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 8px;
+  font-size: 2.5rem;
+  margin-bottom: 8px;
 }
 main section .content h1 + p {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 24px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 main section .content p + p {
-    display: flex;
-    align-items: center;
-    height: 50px;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
 main section .content a {
-    padding: 6px 12px;
+  padding: 6px 12px;
 }
 main section .content a {
-    min-height: 38px;
-    color: #fff;
-    background-color: #007bff;
-    border: #007bff 1px solid;
-    border-radius: 5px;
+  min-height: 38px;
+  color: #fff;
+  background-color: #007bff;
+  border: #007bff 1px solid;
+  border-radius: 5px;
 }
 main section .content a:hover {
-    background-color: #0069d9;
+  background-color: #0069d9;
 }
 main section .content a + a {
-    margin-left: 8px;
-    background-color: #6c757d;
-    border: #6c757d 1px solid;
+  margin-left: 8px;
+  background-color: #6c757d;
+  border: #6c757d 1px solid;
 }
 main section .content a + a:hover {
-    background-color: #5a6268;
+  background-color: #5a6268;
 }
 
 .album {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .album .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 48px 0;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 48px 0;
+  gap: 24px;
 }
 
-/* for each card */
 .card {
-    background-color: #fff;
-    border: 1px solid #dfdfdf;
-    border-radius: 3px;
-    width: 348px;
-    height: 410px;
-    display: flex;
-    flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  width: 348px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
 }
 .card img {
-    object-fit: cover;
+  object-fit: cover;
 }
 .card > div {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 .card .buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .card .buttons div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
 }
 .card .buttons div button {
-    background-color: #fff;
-    border: 1px solid #6c757d;
-    color: #6c757d;
-    height: 31px;
-    text-size-adjust: 14px;
-    padding: 4px 8px;
+  background-color: #fff;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+  height: 31px;
+  text-size-adjust: 14px;
+  padding: 4px 8px;
 }
 .card .buttons div button:hover {
-    cursor: pointer;
-    background-color: #6c757d;
-    color: #fff;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: #fff;
 }
 .card .buttons div :nth-child(1) {
-    border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
 }
 .card .buttons div :nth-child(2) {
-    margin-left: -1px;
-    border-radius: 0 3px 3px 0;
+  margin-left: -1px;
+  border-radius: 0 3px 3px 0;
 }
 .card small {
-    height: fit-content;
-    color: #6c757d;
+  height: fit-content;
+  color: #6c757d;
 }
 
-/* footer */
 footer {
-    padding: 48px 0;
+  padding: 48px 0;
 }
 
 footer .content p {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 footer .content p a {
-    color: #007bff;
+  color: #007bff;
 }
 footer .content p a:hover {
-    text-decoration: underline;
-    color: #0069d9;
+  text-decoration: underline;
+  color: #0069d9;
 }
 footer .content > :nth-child(1) {
-    float: right;
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
