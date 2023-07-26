@@ -93,11 +93,143 @@ header {
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-                :hover {
-                    background-color: $secondary-color;
-                    color: $bg-color;
-                }
+                
             }
         }
+    }
+}
+
+main section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 96px 32px;
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+        h1 + p{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 24px
+        }
+        p + p {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+        a {
+            padding: 6px 12px;
+        }
+        a {
+            min-height: 38px;
+            color: #fff;
+            background-color: $btn-color;
+            border: #007bff 1px solid;
+            border-radius: 5px;
+            
+        }
+        a:hover {
+            background-color: $btn-color-hover;
+        }
+        a + a {
+            margin-left: 8px;
+            background-color: $secondary-color;
+            border: $secondary-color 1px solid;
+        }
+        a + a:hover {
+            background-color: #5a6268;
+        }
+    }
+}
+
+.album {
+    background-color: $alt-bg-color;
+}
+.album .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 48px 0;
+    gap: 24px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    width: 348px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    img {
+        object-fit: cover;
+    }
+    > div {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .buttons div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        button {
+            background-color: #fff;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            height: 31px;
+            text-size-adjust: 14px;
+            padding: 4px 8px;
+            
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: $secondary-color;
+            color: #fff;
+        }
+        
+        :nth-child(1) {
+            border-radius: 3px 0 0 3px;
+        }
+        :nth-child(2) {
+            margin-left: -1px;
+            border-radius: 0 3px 3px 0;
+        }
+    }
+    small {
+        height: fit-content;
+        color: $secondary-color;
+    }
+}
+
+footer {
+    padding: 48px 0;
+}
+footer .content{
+    p {
+        margin-bottom: 4px;
+        a {
+            color: $btn-color;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: $btn-color-hover;
+        }
+    }
+    > :nth-child(1)
+    {
+        float: right;
     }
 }
